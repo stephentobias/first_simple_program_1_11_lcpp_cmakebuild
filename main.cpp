@@ -1,10 +1,12 @@
-﻿// first_simple_program_1_11_lcpp_cmakebuild.cpp : Defines the entry point for the application.
-//
-
-#include <iostream>
+﻿#include <iostream>
 
 int main()
 {
-	std::cout << "Hello CMake." << '\n';
+	std::cout << "Enter an integer: ";
+
+	int user_input;
+	std::cin >> user_input;
+
+	std::cout << "Double that integer is: " << user_input * 2 << '\n';
 	return 0;
 }
